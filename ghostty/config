@@ -1,0 +1,21 @@
+# vesper
+theme = vesper
+#window
+window-width=10000
+window-height=10000
+window-theme = dark
+window-vsync = true
+#transparency
+background-opacity=0.9
+#adjust the height of lines
+adjust-cell-height=30%
+#fonts
+font-size=11
+font-family = 'Jetbrains Mono NL'
+#title bar
+title = " " 
+fullscreen = true
+gtk-titlebar=false
+# shaders
+#custom-shader=ghostty-shaders/bloom050.glsl
+#custom-shader-animation=true
