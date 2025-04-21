@@ -21,10 +21,10 @@ return {
               layout = {
                 position = "float",
                 relative = "editor",
-                width = math.floor(vim.o.columns * 0.75), -- 50% of screen width
-                height = math.floor(vim.o.lines * 0.75),  -- 50% of screen height
-                row = math.floor(vim.o.lines * 0.125),    -- center vertically
-                col = math.floor(vim.o.columns * 0.125),  -- center horizontally
+                width = math.floor(vim.o.columns * 0.5), -- 50% of screen width
+                height = math.floor(vim.o.lines * 0.5),  -- 50% of screen height
+                row = math.floor(vim.o.lines * 0.25),    -- center vertically
+                col = math.floor(vim.o.columns * 0.25),  -- center horizontally
                 style = "minimal",
                 border = "rounded",
               }
