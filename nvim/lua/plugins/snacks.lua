@@ -32,6 +32,11 @@ return {
           },
         },
       },
+      notifier = {
+        enabled = true,
+        style = "compact",
+        timeout = 2500,
+      },
       terminal = {
         win = {
           position = "float",
