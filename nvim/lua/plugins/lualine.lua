@@ -27,8 +27,8 @@ return {
         disabled_filetypes = { statusline = { "dashboard", "alpha", "ministarter", "snacks_dashboard" } },
       },
       sections = {
-        lualine_a = { "mode" },
-        lualine_b = {
+        -- lualine_a = { "mode" },
+        lualine_a = {
           LazyVim.lualine.root_dir(),
           {
             "diagnostics",
@@ -47,6 +47,7 @@ return {
           -- },
           { LazyVim.lualine.pretty_path() },
         },
+        lualine_b = {},
         lualine_c = {},
 
         lualine_x = {
