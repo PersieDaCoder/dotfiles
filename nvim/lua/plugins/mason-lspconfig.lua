@@ -1,5 +1,6 @@
 return {
     "williamboman/mason.nvim",
+    priority = 1000,
     opts = {
         ensure_installed = {
             -- LSP servers
@@ -7,14 +8,13 @@ return {
             "lua-language-server",
             "prisma-language-server",
             "tailwindcss-language-server",
-            "vtsls",
+            "typescript-language-server",
 
             -- Formatters and tools
             "csharpier",
             "shfmt",
             "stylua",
             "prettier",
-            "js-debug-adapter", -- for JavaScript/TypeScript DAP
         },
     },
 }

@@ -202,7 +202,6 @@ return {
         },
         -- stylua: ignore
         mini = { -- stylua: line_length=999
-          "mini.ai.setup",
           "mini.comment.setup",
           "mini.pairs.setup",
           "mini.surround.setup",

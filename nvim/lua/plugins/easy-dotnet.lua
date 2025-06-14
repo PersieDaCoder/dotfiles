@@ -1,6 +1,7 @@
 return {
     "GustavEikaas/easy-dotnet.nvim",
     dependencies = { "nvim-lua/plenary.nvim", "nvim-telescope/telescope.nvim" },
+    lazy = true,
     config = function()
         local Path = require("plenary.path")
 

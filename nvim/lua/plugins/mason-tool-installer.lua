@@ -6,7 +6,6 @@ return {
             "shfmt",
             "stylua",
             "prettier",
-            "js-debug-adapter",
         },
     },
 }
