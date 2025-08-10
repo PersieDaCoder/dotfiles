@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(nvim:*)",
+      "Bash(~/.local/share/nvim/mason/bin/csharp-ls --help)",
+      "Bash(~/.local/share/nvim/mason/bin/OmniSharp --help)",
+      "Bash(dotnet --version)",
+      "WebFetch(domain:github.com)",
+      "Bash(rm:*)"
+    ],
+    "deny": []
+  }
+}

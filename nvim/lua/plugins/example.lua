@@ -1,6 +1,6 @@
--- since this is just an example spec, don't actually load anything here and return an empty spec
+-- Enable nvim-cmp for better C# completion
 -- stylua: ignore
-if true then return {} end
+if false then return {} end
 
 -- every spec file under the "plugins" directory will be loaded automatically by lazy.nvim
 --
@@ -139,6 +139,21 @@ return {
                 -- with blink.compat
                 compat = {},
                 default = { "lsp", "path", "snippets", "buffer" },
+                providers = {
+                    lsp = {
+                        -- Enable auto-import completions for C#
+                        transform_items = function(_, items)
+                            -- Mark items that would trigger auto-imports
+                            for _, item in ipairs(items) do
+                                if item.additionalTextEdits then
+                                    item.labelDetails = item.labelDetails or {}
+                                    item.labelDetails.description = (item.labelDetails.description or "") .. " (auto-import)"
+                                end
+                            end
+                            return items
+                        end,
+                    },
+                },
             },
 
             cmdline = {

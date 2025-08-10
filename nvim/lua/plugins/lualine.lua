@@ -1,5 +1,6 @@
 return {
     "nvim-lualine/lualine.nvim",
+    enabled = true,
     lazy = true,
     event = "VeryLazy",
     init = function()
@@ -30,7 +31,7 @@ return {
             sections = {
                 -- lualine_a = { "mode" },
                 lualine_a = {
-                    LazyVim.lualine.root_dir(),
+                    -- LazyVim.lualine.root_dir(),
                     {
                         "diagnostics",
                         symbols = {
@@ -46,7 +47,7 @@ return {
                     --   separator = "",
                     --   padding = { left = 1, right = 0 }
                     -- },
-                    { LazyVim.lualine.pretty_path() },
+                    -- { LazyVim.lualine.pretty_path() },
                 },
                 lualine_b = {},
                 lualine_c = {},
