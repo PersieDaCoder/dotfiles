@@ -24,12 +24,7 @@ return {
         },
         formatters = {
             organize_imports = {
-                command = function()
-                    return vim.lsp.buf.code_action({
-                        context = { only = { "source.organizeImports" } },
-                        apply = true,
-                    })
-                end,
+                command = "prettier",
                 stdin = false,
             },
             prettier = {
