@@ -14,26 +14,6 @@ services:
       - ASPNETCORE_URLS=http://+:8080
       - ASPNETCORE_ENVIRONMENT=Development
       - CONNECTION_STRING=User ID=postgres;Password=postgres;Host=postgis;Port=5432;Database=PCDACODB;
-      - ISSUER=https://pcdaco-api.persiehomeserver.com
-      - AUDIENCE=https://pcdaco-api.persiehomeserver.com
-      - SECRET_KEY=tAlTTVevURpLmmhnCwml9wVhmGrAHX69joB5DbsTQYiVlQIkJwXKwvzFTLnhkHGQ
-      - MASTER_KEY=a3f1b6d7e2c9f1b8a4e7d8c6b2f3a2f1
-      - TOKEN_EXPIRATION_IN_MINUTES=60
-      - CLOUDINARY_URL=cloudinary://893831472878937:xmLYe7EIekjJjNfMsUic5G4iyLw@ds2bfbfyd
-      - PAYOS_CLIENT_ID=4c6c2974-206a-4e6e-a3c3-f27a64cfa372
-      - PAYOS_API_KEY=8c0bc12d-2490-4820-af34-5cb325695df6
-      - PAYOS_CHECKSUM_KEY=a7d31fe00b2dfb6791e6c5129dd0af71879b7c9d53d9c9439a0f01d159cf304c
-      - RETURN_URL="https://adminpcdaco.persiehomeserver.com"
-      - CANCEL_URL="https://adminpcdaco.persiehomeserver.com"
-      - MAIL_SETTINGS_MAIL=mglongbao@gmail.com
-      - MAIL_SETTINGS_DISPLAY_NAME=Free Driver
-      - MAIL_SETTINGS_PASSWORD=uyfy ycce qjwt szyd
-      - MAIL_SETTINGS_HOST=smtp.gmail.com
-      - MAIL_SETTINGS_PORT=587
-      - SEQ_URL=http://seq:5341
-      - OTEL_EXPORTER_OTLP_ENDPOINT=http://seq:5341/ingest/otlp/v1/traces
-      - OTEL_EXPORTER_OTLP_PROTOCOL=http/protobuf
-      - COLLATERAL_PRICE=20000000
     ports:
       - "8080:8080"
     depends_on:
@@ -55,7 +35,6 @@ services:
       - NODE_ENV=production
       - NEXT_PRIVATE_API_URL=http://pcdaco-be:8080
       - NEXT_PUBLIC_API_URL=https://api.freedriver.fun
-      - NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN=pk.eyJ1IjoiYW5odGh0MTM4IiwiYSI6ImNtOGExOHI2bDEwb2cybHF1M2l4aWxnNmsifQ.zqi0B4G5-tDF2HG0qSTk3Q
     depends_on:
       - pcdaco-be
     ports:
